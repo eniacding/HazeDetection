@@ -1,0 +1,26 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/weatherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:visibility="invisible">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include android:id="@+id/now_xml" layout="@layout/now" />
+            <include android:id="@+id/air_quility_xml" layout="@layout/air_quility"/>
+            <include android:id="@+id/forecast_xml" layout="@layout/forecast" />
+            <include android:id="@+id/linechart1" layout="@layout/linechart1" />
+            <include android:id="@+id/linechart2" layout="@layout/linechart2" />
+            <include android:id="@+id/life_index_xml" layout="@layout/life_index" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
